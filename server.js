@@ -14,7 +14,7 @@ app.get("/pokemon", (req, res) => {
 });
 
 app.get("/pokemon/:id", (req, res) => {
-  res.render("Show.jsx", { pokemon });
+  res.render("Show.jsx", { mon: pokemon[req.params.id] });
 });
 
 app.listen(3000, (req, res) => {
