@@ -9,9 +9,10 @@ class Show extends React.Component {
     const poke = this.props.mon;
     return (
       <div>
-        <h1>Gotta Catch 'Em All!</h1>
+        <h1 style={myStyle}>Gotta Catch 'Em All!</h1>
         <h2> {poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</h2>
-        <img src={poke.img + ".jpg"} alt="Picture of Pokemon" />
+        <img src={poke.img + ".jpg"} alt="Picture of Pokemon" /> <br />
+        <a href="/pokemon">Back</a>
       </div>
     );
   }
